@@ -4,7 +4,7 @@
 - список задач (название, описание, дата создания, статус),
 - добавление/редактирование/удаление,
 - поиск,
-- первичная загрузка из `https://dummyjson.com/todos`,
+- первичная загрузка из `https://dummyjson.com/todos` (если нет интернета файл загружается из ресурсов),
 - фоновые операции для CRUD/поиска через `OperationQueue` + GCD,
 - хранение и восстановление через CoreData,
 - разбиение по слоям VIPER (View/Interactor/Presenter/Entity/Router).
@@ -15,9 +15,7 @@
 - `ToDoListApp/TaskList` — VIPER-модуль списка задач
 
 ## Как запустить
-1. Откройте `/Users/aleksejstepanov/Documents/Logbook/ToDoList/ToDoListApp.xcodeproj` в Xcode.
-2. При необходимости задайте ваш `Team` и `Bundle Identifier` в Signing & Capabilities.
-3. Запустите на симуляторе iPhone.
+  Запустите на симуляторе iPhone.
 
 ## Примечания
 - Первый запуск импортирует задачи из API и сохраняет локально.
